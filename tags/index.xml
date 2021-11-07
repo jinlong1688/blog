@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 慕言简记</title>
-    <link>https://jinlong1688.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on 慕言简记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 07 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jinlong1688.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>修行</title>
-      <link>https://jinlong1688.github.io/tags/%E4%BF%AE%E8%A1%8C/</link>
+      <link>/tags/%E4%BF%AE%E8%A1%8C/</link>
       <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jinlong1688.github.io/tags/%E4%BF%AE%E8%A1%8C/</guid>
+      <guid>/tags/%E4%BF%AE%E8%A1%8C/</guid>
       <description></description>
     </item>
     

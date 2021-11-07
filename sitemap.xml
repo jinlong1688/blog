@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jinlong1688.github.io/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2021-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinlong1688.github.io/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2021-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinlong1688.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2021-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinlong1688.github.io/posts/%E4%BA%BA%E7%94%9F%E4%B8%89%E5%A2%83/</loc>
+    <loc>/posts/%E4%BA%BA%E7%94%9F%E4%B8%89%E5%A2%83/</loc>
     <lastmod>2021-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinlong1688.github.io/tags/%E4%BF%AE%E8%A1%8C/</loc>
+    <loc>/tags/%E4%BF%AE%E8%A1%8C/</loc>
     <lastmod>2021-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinlong1688.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2021-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinlong1688.github.io/categories/%E9%81%93/</loc>
+    <loc>/categories/%E9%81%93/</loc>
     <lastmod>2021-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinlong1688.github.io/archives/</loc>
+    <loc>/archives/</loc>
   </url>
 </urlset>
