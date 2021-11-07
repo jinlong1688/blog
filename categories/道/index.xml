@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>道 on 慕言简记</title>
+    <link>/categories/%E9%81%93/</link>
+    <description>Recent content in 道 on 慕言简记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 07 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/%E9%81%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>人生三境</title>
+      <link>/posts/%E4%BA%BA%E7%94%9F%E4%B8%89%E5%A2%83/</link>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/%E4%BA%BA%E7%94%9F%E4%B8%89%E5%A2%83/</guid>
+      <description>&lt;p&gt;第一境界：昨夜西风凋碧树。独上高楼，望尽天涯路。
+第二境界：衣带渐宽终不悔，为伊消得人憔悴。
+第三境界：众里寻他千百度，暮然回首，那人却在灯火阑珊处。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
