@@ -7,10 +7,12 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "",
+  "headline": "微服务分层思想",
   
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
+  "image": "//d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city.jpg",
+  
+  "datePublished": "2021-11-07T00:00:00Z",
+  "dateModified": "2021-11-07T00:00:00Z",
   "author": {
     "@type": "Person",
     "name": "慕言",
@@ -32,8 +34,8 @@
     }
     
   },
-  "description": "微服务分层思想 在多年开发实践中，长期处于代码分层不清晰，不易阅读，从代码理解业务过于困难，而且由于历史迭代原因，代码变得不可维护，最好导致很多同学维护不动只能跑路。\n基本指导思想 分层思想 基本原理就是分层，分为聚合服务、原子服务、适配服务。通过聚合服务达到业务逻辑的实现，原子服务则是对不变的业务进行原子化，同时也确定业务的职责、边界。适配服务屏蔽了外部服务的变化，比如调用第三方服务：微信支付、支付宝支付、第三方登录。\n扁平化 服务依赖层次不能太深，一方面增加系统的复杂度，一方面影响性能。如果层次加深，一般要通过聚合服务实现扁平化。\n不能依赖倒置 底层服务不能依赖上层服务。\n如图1所示应该是一种比较合理的架构： 如图2所示带有缺陷的架构： 错误的代价 方案一、方案二的优缺点，我先不说。我用一个故障来验证。 血案是这样产生的：一次会员服务发布出现故障，由于购物车依赖于会员服务，这时调用会员服务的请求存在大量的超时，同时有部分请求是调用营销服务，这时营销服务也有部分请求去调用会员服务，由于存在超时，这时购物袋调用营销的请求也就出现超时，由于整个系统的死循环依赖，导致订单服务也出现大量的请求超时，从而从一个会员服务的错误波及到整个系统。 但是如果采用方案一，出现会员服务故障，整个系统也不会瘫痪，如果请求不涉及到会员属性，那么这些请求还是属于正常的请求，从而到达服务柔性可用的状态，但是如果大量的请求大量堆积到会员服务，最终整个系统也瘫痪，但是这种情况恢复也比较快：回滚会员、重启购物袋服务。 但是方案二故障恢复就比较麻烦：回滚会员，重启所有服务，清除所有超时的请求。\n边重构边生活 微服务的另一个重要活动就是治理。治理的范畴：减少依赖的层次，简化依赖，避免出现循环依赖。",
-  "keywords": [, "development"]
+  "description": "",
+  "keywords": ["微服务", "development"]
 }
 
 </script>
@@ -42,45 +44,37 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.89.1 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="慕言">
-<meta name="keywords" content=", development">
-<meta name="description" content="微服务分层思想 在多年开发实践中，长期处于代码分层不清晰，不易阅读，从代码理解业务过于困难，而且由于历史迭代原因，代码变得不可维护，最好导致很多同学维护不动只能跑路。
-基本指导思想 分层思想 基本原理就是分层，分为聚合服务、原子服务、适配服务。通过聚合服务达到业务逻辑的实现，原子服务则是对不变的业务进行原子化，同时也确定业务的职责、边界。适配服务屏蔽了外部服务的变化，比如调用第三方服务：微信支付、支付宝支付、第三方登录。
-扁平化 服务依赖层次不能太深，一方面增加系统的复杂度，一方面影响性能。如果层次加深，一般要通过聚合服务实现扁平化。
-不能依赖倒置 底层服务不能依赖上层服务。
-如图1所示应该是一种比较合理的架构： 如图2所示带有缺陷的架构： 错误的代价 方案一、方案二的优缺点，我先不说。我用一个故障来验证。 血案是这样产生的：一次会员服务发布出现故障，由于购物车依赖于会员服务，这时调用会员服务的请求存在大量的超时，同时有部分请求是调用营销服务，这时营销服务也有部分请求去调用会员服务，由于存在超时，这时购物袋调用营销的请求也就出现超时，由于整个系统的死循环依赖，导致订单服务也出现大量的请求超时，从而从一个会员服务的错误波及到整个系统。 但是如果采用方案一，出现会员服务故障，整个系统也不会瘫痪，如果请求不涉及到会员属性，那么这些请求还是属于正常的请求，从而到达服务柔性可用的状态，但是如果大量的请求大量堆积到会员服务，最终整个系统也瘫痪，但是这种情况恢复也比较快：回滚会员、重启购物袋服务。 但是方案二故障恢复就比较麻烦：回滚会员，重启所有服务，清除所有超时的请求。
-边重构边生活 微服务的另一个重要活动就是治理。治理的范畴：减少依赖的层次，简化依赖，避免出现循环依赖。">
+<meta name="keywords" content="微服务, development">
+<meta name="description" content="">
 
 
-<meta property="og:description" content="微服务分层思想 在多年开发实践中，长期处于代码分层不清晰，不易阅读，从代码理解业务过于困难，而且由于历史迭代原因，代码变得不可维护，最好导致很多同学维护不动只能跑路。
-基本指导思想 分层思想 基本原理就是分层，分为聚合服务、原子服务、适配服务。通过聚合服务达到业务逻辑的实现，原子服务则是对不变的业务进行原子化，同时也确定业务的职责、边界。适配服务屏蔽了外部服务的变化，比如调用第三方服务：微信支付、支付宝支付、第三方登录。
-扁平化 服务依赖层次不能太深，一方面增加系统的复杂度，一方面影响性能。如果层次加深，一般要通过聚合服务实现扁平化。
-不能依赖倒置 底层服务不能依赖上层服务。
-如图1所示应该是一种比较合理的架构： 如图2所示带有缺陷的架构： 错误的代价 方案一、方案二的优缺点，我先不说。我用一个故障来验证。 血案是这样产生的：一次会员服务发布出现故障，由于购物车依赖于会员服务，这时调用会员服务的请求存在大量的超时，同时有部分请求是调用营销服务，这时营销服务也有部分请求去调用会员服务，由于存在超时，这时购物袋调用营销的请求也就出现超时，由于整个系统的死循环依赖，导致订单服务也出现大量的请求超时，从而从一个会员服务的错误波及到整个系统。 但是如果采用方案一，出现会员服务故障，整个系统也不会瘫痪，如果请求不涉及到会员属性，那么这些请求还是属于正常的请求，从而到达服务柔性可用的状态，但是如果大量的请求大量堆积到会员服务，最终整个系统也瘫痪，但是这种情况恢复也比较快：回滚会员、重启购物袋服务。 但是方案二故障恢复就比较麻烦：回滚会员，重启所有服务，清除所有超时的请求。
-边重构边生活 微服务的另一个重要活动就是治理。治理的范畴：减少依赖的层次，简化依赖，避免出现循环依赖。">
+<meta property="og:description" content="">
 <meta property="og:type" content="article">
-<meta property="og:title" content="慕言简记">
-<meta name="twitter:title" content="慕言简记">
+<meta property="og:title" content="微服务分层思想">
+<meta name="twitter:title" content="微服务分层思想">
 <meta property="og:url" content="https://jinlong1688.github.io/blog/posts/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%88%86%E5%B1%82%E6%80%9D%E6%83%B3/">
 <meta property="twitter:url" content="https://jinlong1688.github.io/blog/posts/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%88%86%E5%B1%82%E6%80%9D%E6%83%B3/">
 <meta property="og:site_name" content="慕言简记">
-<meta property="og:description" content="微服务分层思想 在多年开发实践中，长期处于代码分层不清晰，不易阅读，从代码理解业务过于困难，而且由于历史迭代原因，代码变得不可维护，最好导致很多同学维护不动只能跑路。
-基本指导思想 分层思想 基本原理就是分层，分为聚合服务、原子服务、适配服务。通过聚合服务达到业务逻辑的实现，原子服务则是对不变的业务进行原子化，同时也确定业务的职责、边界。适配服务屏蔽了外部服务的变化，比如调用第三方服务：微信支付、支付宝支付、第三方登录。
-扁平化 服务依赖层次不能太深，一方面增加系统的复杂度，一方面影响性能。如果层次加深，一般要通过聚合服务实现扁平化。
-不能依赖倒置 底层服务不能依赖上层服务。
-如图1所示应该是一种比较合理的架构： 如图2所示带有缺陷的架构： 错误的代价 方案一、方案二的优缺点，我先不说。我用一个故障来验证。 血案是这样产生的：一次会员服务发布出现故障，由于购物车依赖于会员服务，这时调用会员服务的请求存在大量的超时，同时有部分请求是调用营销服务，这时营销服务也有部分请求去调用会员服务，由于存在超时，这时购物袋调用营销的请求也就出现超时，由于整个系统的死循环依赖，导致订单服务也出现大量的请求超时，从而从一个会员服务的错误波及到整个系统。 但是如果采用方案一，出现会员服务故障，整个系统也不会瘫痪，如果请求不涉及到会员属性，那么这些请求还是属于正常的请求，从而到达服务柔性可用的状态，但是如果大量的请求大量堆积到会员服务，最终整个系统也瘫痪，但是这种情况恢复也比较快：回滚会员、重启购物袋服务。 但是方案二故障恢复就比较麻烦：回滚会员，重启所有服务，清除所有超时的请求。
-边重构边生活 微服务的另一个重要活动就是治理。治理的范畴：减少依赖的层次，简化依赖，避免出现循环依赖。">
-<meta name="twitter:description" content="微服务分层思想 在多年开发实践中，长期处于代码分层不清晰，不易阅读，从代码理解业务过于困难，而且由于历史迭代原因，代码变得不可维护，最好导致很多同学维护不动只能跑路。
-基本指导思想 分层思想 基本原理就是分层，分为聚合服务、原子服务、适配服务。通过聚合服务达到业务逻辑的实现，原子服务则是对不变的业务进行原子化，同时也确定业务的职责、边界。适配服务屏蔽了外部服务的变化，比如调用第三方服务：微信支付、支付宝支付、第三方登录。
-扁平化 服务依赖层次不能太深，一方面增加系统的复杂度，一方面影响性能。如果层次加深，一般要通过聚合服务实现扁平化。
-不能依赖倒置 底层服务不能依赖上层服务。
-如图1所示应该是一种比较合理的架构： 如图2所示带有缺陷的架构： 错误的代价 方案一、方案二的优缺点，我先不说。我用一个故障来验证。 血案是这样产生的：一次会员服务发布出现故障，由于购物车依赖于会员服务，这时调用会员服务的请求存在大量的超时，同时有部分请求是调用营销服务，这时营销服务也有部分请求去调用会员服务，由于存在超时，这时购物袋调用营销的请求也就出现超时，由于整个系统的死循环依赖，导致订单服务也出现大量的请求超时，从而从一个会员服务的错误波及到整个系统。 但是如果采用方案一，出现会员服务故障，整个系统也不会瘫痪，如果请求不涉及到会员属性，那么这些请求还是属于正常的请求，从而到达服务柔性可用的状态，但是如果大量的请求大量堆积到会员服务，最终整个系统也瘫痪，但是这种情况恢复也比较快：回滚会员、重启购物袋服务。 但是方案二故障恢复就比较麻烦：回滚会员，重启所有服务，清除所有超时的请求。
-边重构边生活 微服务的另一个重要活动就是治理。治理的范畴：减少依赖的层次，简化依赖，避免出现循环依赖。">
+<meta property="og:description" content="">
+<meta name="twitter:description" content="">
 <meta property="og:locale" content="zh-cn">
 
   
+    <meta property="article:published_time" content="2021-11-07T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2021-11-07T00:00:00">
   
   
   
+    
+      <meta property="article:section" content="后端">
+    
+  
+  
+    
+      <meta property="article:tag" content="微服务">
+    
   
 
 
@@ -98,9 +92,15 @@
 
 
 
+  <meta property="og:image" content="//d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city.jpg">
+  <meta property="twitter:image" content="//d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city.jpg">
 
 
-    <title>慕言简记</title>
+  <meta property="og:image" content="//d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city-750.jpg">
+  <meta property="twitter:image" content="//d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city-750.jpg">
+
+
+    <title>微服务分层思想</title>
 
     <link rel="icon" href="https://jinlong1688.github.io/blog/favicon.png">
     
@@ -236,33 +236,51 @@
 </nav>
 
       
-
-      <div id="main" data-behavior="5"
-        class="
-               hasCoverMetaIn
-               ">
-        <article class="post" id="top">
-          
-          
-            <div class="post-header main-content-wrap text-left">
+  <div class="post-header-cover
+              text-center
+              post-header-cover--full"
+       style="background-image:url('//d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city.jpg')"
+       data-behavior="5">
+    
+      <div class="post-header main-content-wrap text-center">
   
     <h1 class="post-title">
-      
+      微服务分层思想
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time datetime="0001-01-01T00:00:00Z">
+      <time datetime="2021-11-07T00:00:00Z">
         
-  一月 1, 1
+  十一月 7, 2021
 
       </time>
     
     
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="https://jinlong1688.github.io/blog/categories/%e5%90%8e%e7%ab%af">后端</a>
+    
+  
+
   </div>
 
 </div>
+    
+  </div>
+
+
+      <div id="main" data-behavior="5"
+        class="hasCover
+               hasCoverMetaIn
+               hasCoverCaption">
+        <article class="post" id="top">
+          
+            <span class="post-header-cover-caption caption">文章cover图片描述</span>
+          
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
@@ -286,7 +304,6 @@
 但是方案二故障恢复就比较麻烦：回滚会员，重启所有服务，清除所有超时的请求。</p>
 <h2 id="边重构边生活">边重构边生活</h2>
 <p>微服务的另一个重要活动就是治理。治理的范畴：减少依赖的层次，简化依赖，避免出现循环依赖。</p>
-
               
 
 
@@ -294,6 +311,16 @@
           </div>
           <div id="post-footer" class="post-footer main-content-wrap">
             
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">标签</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://jinlong1688.github.io/blog/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">微服务</a>
+
+                  </div>
+                
               
             
             
