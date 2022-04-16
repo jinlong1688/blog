@@ -9,7 +9,7 @@
   "@type": "BlogPosting",
   "headline": "微服务分层思想",
   
-  "image": "https://jinlong1688.github.io/blog/images/tu3.jpg",
+  "image": "https://jinlong1688.github.io/blog/images/tu3.png",
   
   "datePublished": "2022-04-16T00:00:00Z",
   "dateModified": "2022-04-16T00:00:00Z",
@@ -92,12 +92,12 @@
 
 
 
-  <meta property="og:image" content="https://jinlong1688.github.io/blog/images/tu3.jpg">
-  <meta property="twitter:image" content="https://jinlong1688.github.io/blog/images/tu3.jpg">
+  <meta property="og:image" content="https://jinlong1688.github.io/blog/images/tu3.png">
+  <meta property="twitter:image" content="https://jinlong1688.github.io/blog/images/tu3.png">
 
 
-  <meta property="og:image" content="https://jinlong1688.github.io/blog/images/tu3.jpg">
-  <meta property="twitter:image" content="https://jinlong1688.github.io/blog/images/tu3.jpg">
+  <meta property="og:image" content="https://jinlong1688.github.io/blog/images/tu3.png">
+  <meta property="twitter:image" content="https://jinlong1688.github.io/blog/images/tu3.png">
 
 
     <title>微服务分层思想</title>
@@ -239,7 +239,7 @@
   <div class="post-header-cover
               text-center
               post-header-cover--full"
-       style="background-image:url('/images/tu3.jpg')"
+       style="background-image:url('/images/tu3.png')"
        data-behavior="5">
     
       <div class="post-header main-content-wrap text-center">
@@ -294,9 +294,9 @@
 <h3 id="不能依赖倒置">不能依赖倒置</h3>
 <p>底层服务不能依赖上层服务。</p>
 <p>如图1所示应该是一种比较合理的架构：
-<img src="./tu1.png" alt="图1"></p>
+<img src="images/tu1.png" alt="图1"></p>
 <p>如图2所示带有缺陷的架构：
-<img src="./tu2.png" alt="图1"></p>
+<img src="images/tu2.png" alt="图1"></p>
 <h2 id="错误的代价">错误的代价</h2>
 <p>方案一、方案二的优缺点，我先不说。我用一个故障来验证。
 血案是这样产生的：一次会员服务发布出现故障，由于购物车依赖于会员服务，这时调用会员服务的请求存在大量的超时，同时有部分请求是调用营销服务，这时营销服务也有部分请求去调用会员服务，由于存在超时，这时购物袋调用营销的请求也就出现超时，由于整个系统的死循环依赖，导致订单服务也出现大量的请求超时，从而从一个会员服务的错误波及到整个系统。
