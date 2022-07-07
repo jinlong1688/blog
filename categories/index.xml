@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 慕言简记</title>
-    <link>https://jinlong1688.github.io/blog/categories/</link>
+    <link>http://jl-idea.cn/categories/</link>
     <description>Recent content in Categories on 慕言简记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 16 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jinlong1688.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://jl-idea.cn/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>后端</title>
-      <link>https://jinlong1688.github.io/blog/categories/%E5%90%8E%E7%AB%AF/</link>
+      <link>http://jl-idea.cn/categories/%E5%90%8E%E7%AB%AF/</link>
       <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://jinlong1688.github.io/blog/categories/%E5%90%8E%E7%AB%AF/</guid>
+      <guid>http://jl-idea.cn/categories/%E5%90%8E%E7%AB%AF/</guid>
       <description></description>
     </item>
     
     <item>
       <title>道</title>
-      <link>https://jinlong1688.github.io/blog/categories/%E9%81%93/</link>
+      <link>http://jl-idea.cn/categories/%E9%81%93/</link>
       <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jinlong1688.github.io/blog/categories/%E9%81%93/</guid>
+      <guid>http://jl-idea.cn/categories/%E9%81%93/</guid>
       <description></description>
     </item>
     

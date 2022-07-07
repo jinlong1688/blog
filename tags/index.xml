@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 慕言简记</title>
-    <link>https://jinlong1688.github.io/blog/tags/</link>
+    <link>http://jl-idea.cn/tags/</link>
     <description>Recent content in Tags on 慕言简记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 16 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jinlong1688.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://jl-idea.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>微服务</title>
-      <link>https://jinlong1688.github.io/blog/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</link>
+      <link>http://jl-idea.cn/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</link>
       <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://jinlong1688.github.io/blog/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</guid>
+      <guid>http://jl-idea.cn/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>修行</title>
-      <link>https://jinlong1688.github.io/blog/tags/%E4%BF%AE%E8%A1%8C/</link>
+      <link>http://jl-idea.cn/tags/%E4%BF%AE%E8%A1%8C/</link>
       <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jinlong1688.github.io/blog/tags/%E4%BF%AE%E8%A1%8C/</guid>
+      <guid>http://jl-idea.cn/tags/%E4%BF%AE%E8%A1%8C/</guid>
       <description></description>
     </item>
     
